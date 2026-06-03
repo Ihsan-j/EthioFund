@@ -6,6 +6,11 @@ import { uploadCampaignAssets } from './campaignUploads';
 import { logActivity } from '../../middleware/activityLogger';
 import * as controller from './campaigns.controller';
 
+/**
+ * Campaign routes (CRUD, updates, milestones, and admin moderation)
+ * Handles public access, organizer actions, and admin controls.
+ */
+
 const router = express.Router();
 
 router.get('/', controller.getAllCampaigns);
